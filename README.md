@@ -31,7 +31,7 @@ area = RaizQ(p * (p - a) * (p - b) * (p - c))
 ## Estrutura do Projeto
 
 ```bash
-|- Projeto
+|- Projeto/
    |- Img/
    |- Projeto.csproj
    |- Projeto.sln
@@ -43,8 +43,10 @@ area = RaizQ(p * (p - a) * (p - b) * (p - c))
 
 ## Evolução do Projeto (Tags)
 
-<lista de links para as tags do projeto>
+- [**v0.1**][1] — Solução procedural
 
 ## Objetivo Educacional
 
 Este projeto **não tem como foco a solução final perfeita**, mas sim o processo de aprendizado e a comparação entre abordagens diferentes para o mesmo problema.
+
+[1]: https://github.com/jspneto/csharp-estudos-comparacao-triangulos/tree/v0.1/Projeto "v0.1"
