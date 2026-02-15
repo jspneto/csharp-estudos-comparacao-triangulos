@@ -4,17 +4,15 @@ Projeto de estudo em C# com o objetivo de **calcular e comparar a área de dois 
 
 ## Detalhes Gerais
 
-- **Versão**: 0.2
-- **Conceito aplicado:** Classes
+- **Versão**: 0.2.1
+- **Conceito aplicado:** Refatoração de código
 
 ## Descrição da Tag
 
-Evolucao do modelo procedural para orientacao a objetos.
+Refatoracao estrutural do programa principal.
 
-A classe Triangulo passa a concentrar os atributos dos lados e o metodo de calculo da area utilizando a formula de Heron.
-
-O programa principal agora instancia objetos e delega o calculo a classe, iniciando o processo de modelagem de entidades.
+A execucao do fluxo foi centralizada em SolucaoProblema e a leitura, exibicao e comparacao foram separadas em metodos auxiliares (ConstruirTriangulo, ExibirArea e CompararAreas), deixando o codigo mais legivel e didatico.
 
 ## Exemplo de Execução
 
-<img src="Img/Screenshot-v0.2.png" alt="Versão Padrão" width="936">
+<img src="Img/Screenshot-v0.2.1.png" alt="Versão Padrão" width="936">
