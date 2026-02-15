@@ -27,17 +27,17 @@ class Program
         double yArea = y.Area();
 
         Console.WriteLine();
-        Console.WriteLine("Área de X: " + xArea.ToString("F4", CultureInfo.InvariantCulture));
-        Console.WriteLine("Área de Y: " + yArea.ToString("F4", CultureInfo.InvariantCulture));
+        Console.WriteLine($"Área de {x.Nome}: {xArea.ToString("F4", CultureInfo.InvariantCulture)}");
+        Console.WriteLine($"Área de {y.Nome}: {yArea.ToString("F4", CultureInfo.InvariantCulture)}");
         Console.Write("Maior área: ");
 
         if (xArea >= yArea)
         {
-            Console.WriteLine("X");
+            Console.WriteLine(x.Nome);
         }
         else
         {
-            Console.WriteLine("Y");
+            Console.WriteLine(y.Nome);
         }
     }
 }

@@ -4,17 +4,17 @@ Projeto de estudo em C# com o objetivo de **calcular e comparar a área de dois 
 
 ## Detalhes Gerais
 
-- **Versão**: 0.1
-- **Conceito aplicado:** Solução Procedural
+- **Versão**: 0.2
+- **Conceito aplicado:** Classes
 
 ## Descrição da Tag
 
-Primeira versão do projeto.
+Evolucao do modelo procedural para orientacao a objetos.
 
-Implementação direta e totalmente procedural, sem uso de classes ou métodos.
+A classe Triangulo passa a concentrar os atributos dos lados e o metodo de calculo da area utilizando a formula de Heron.
 
-O objetivo principal desta versão é estabelecer a base lógica do problema antes da introdução de conceitos de orientação a objetos.
+O programa principal agora instancia objetos e delega o calculo a classe, iniciando o processo de modelagem de entidades.
 
 ## Exemplo de Execução
 
-<img src="Img/Screenshot-v0.1.png" alt="Versão Padrão" width="936">
+<img src="Img/Screenshot-v0.2.png" alt="Versão Padrão" width="936">
