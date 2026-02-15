@@ -7,6 +7,11 @@ class Program
 {
     static void Main(string[] args)
     {
+        SolucaoProblema();
+    }
+
+    static void SolucaoProblema()
+    {
         Triangulo x = new Triangulo();
         Triangulo y = new Triangulo();
         
