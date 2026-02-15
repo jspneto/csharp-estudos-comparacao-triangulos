@@ -34,10 +34,15 @@ area = RaizQ(p * (p - a) * (p - b) * (p - c))
 |- Projeto/
    |- Img/
    |- Src/
+      |- IO/
+         |- TrianguloInputs.cs
+         |- TrianguloOutputs.cs
       |- Triangulo.cs
+      |- TrianguloHelpers.cs
    |- Projeto.csproj
    |- Projeto.sln
    |- Program.cs
+   |- ProgramExamples.cs
    |- README.md
 ```
 
@@ -51,6 +56,7 @@ area = RaizQ(p * (p - a) * (p - b) * (p - c))
 
 - **Estrutural:**
   - [**v0.2.1**][3] — Refatoração de Program com métodos auxiliares
+  - [**v0.2.2**][4] — Separa IO e helpers e limpa o entrypoint
 
 ## Objetivo Educacional
 
@@ -59,3 +65,4 @@ Este projeto **não tem como foco a solução final perfeita**, mas sim o proces
 [1]: https://github.com/jspneto/csharp-estudos-comparacao-triangulos/tree/v0.1/Projeto "v0.1"
 [2]: https://github.com/jspneto/csharp-estudos-comparacao-triangulos/tree/v0.2/Projeto "v0.2"
 [3]: https://github.com/jspneto/csharp-estudos-comparacao-triangulos/tree/v0.2.1/Projeto "v0.2.1"
+[4]: https://github.com/jspneto/csharp-estudos-comparacao-triangulos/tree/v0.2.2/Projeto "v0.2.2"
