@@ -12,37 +12,52 @@ class Program
 
     static void SolucaoProblema()
     {
-        Triangulo x = new Triangulo();
-        Triangulo y = new Triangulo();
-        
         Console.WriteLine("Entre com os dados do primeiro triângulo:");
-        x.Nome = Console.ReadLine()!;
-        x.A = double.Parse(Console.ReadLine()!, CultureInfo.InvariantCulture);
-        x.B = double.Parse(Console.ReadLine()!, CultureInfo.InvariantCulture);
-        x.C = double.Parse(Console.ReadLine()!, CultureInfo.InvariantCulture);
+        Triangulo x = CriarTriangulo();
 
         Console.WriteLine();
-        Console.WriteLine("Entre com as medidas do segundo triângulo:");
-        y.Nome = Console.ReadLine()!;
-        y.A = double.Parse(Console.ReadLine()!, CultureInfo.InvariantCulture);
-        y.B = double.Parse(Console.ReadLine()!, CultureInfo.InvariantCulture);
-        y.C = double.Parse(Console.ReadLine()!, CultureInfo.InvariantCulture);
+        Console.WriteLine("Entre com os dados do segundo triângulo:");
+        Triangulo y = CriarTriangulo();
 
-        double xArea = x.Area();
-        double yArea = y.Area();
+        Triangulo maiorArea = CompararAreas(x, y);
 
         Console.WriteLine();
-        Console.WriteLine($"Área de {x.Nome}: {xArea.ToString("F4", CultureInfo.InvariantCulture)}");
-        Console.WriteLine($"Área de {y.Nome}: {yArea.ToString("F4", CultureInfo.InvariantCulture)}");
-        Console.Write("Maior área: ");
+        ExibirArea(x);
+        ExibirArea(y);
+        Console.WriteLine($"Maior área: {maiorArea.Nome}");
+    }
 
-        if (xArea >= yArea)
+    static Triangulo CriarTriangulo()
+    {
+        Triangulo t = new Triangulo();
+
+        Console.Write("Nome: ");
+        t.Nome = Console.ReadLine()!;
+        Console.Write("Lado A: ");
+        t.A = double.Parse(Console.ReadLine()!, CultureInfo.InvariantCulture);
+        Console.Write("Lado B: ");
+        t.B = double.Parse(Console.ReadLine()!, CultureInfo.InvariantCulture);
+        Console.Write("Lado C: ");
+        t.C = double.Parse(Console.ReadLine()!, CultureInfo.InvariantCulture);
+
+        return t;
+    }
+
+    static Triangulo CompararAreas(Triangulo t1, Triangulo t2)
+    {
+        if (t1.Area() >= t2.Area())
         {
-            Console.WriteLine(x.Nome);
+            return t1;
         }
         else
         {
-            Console.WriteLine(y.Nome);
+            return t2;
         }
+    }
+
+    static void ExibirArea(Triangulo t)
+    {
+        double area = t.Area();
+        Console.WriteLine($"Área de {t.Nome}: {area.ToString("F4", CultureInfo.InvariantCulture)}");
     }
 }
