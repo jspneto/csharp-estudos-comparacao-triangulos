@@ -4,28 +4,72 @@ namespace Projeto.Src;
 
 class Triangulo
 {
-    public string Nome;
-    public double A;
-    public double B;
-    public double C;
+    private string _nome;
+    private double _a;
+    private double _b;
+    private double _c;
 
     public Triangulo(string nome, double a, double b, double c)
     {
         if (nome != null && nome.Length >= 3)
         {
-            Nome = nome;
+            _nome = nome;
         }
         else
         {
-            Nome = "ABC";
+            _nome = "ABC";
         }
 
-        A = a;
-        B = b;
-        C = c;
+        _a = a;
+        _b = b;
+        _c = c;
     }
 
     public Triangulo(string nome) : this(nome, 3.0, 4.0, 5.0) {}
+
+    public string Nome
+    {
+        get
+        {
+            return _nome;
+        }
+
+        set
+        {
+            if (value != null && value.Length >= 3)
+            {
+                _nome = value;
+            }
+            else
+            {
+                _nome = "ABC";
+            }
+        }
+    }
+
+    public double A
+    {
+        get
+        {
+            return _a;
+        }
+    }
+
+    public double B
+    {
+        get
+        {
+            return _b;
+        }
+    }
+
+    public double C
+    {
+        get
+        {
+            return _c;
+        }
+    }
 
     public double Area()
     {

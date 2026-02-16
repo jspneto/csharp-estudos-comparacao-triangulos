@@ -61,4 +61,27 @@ static class ProgramExamples
         Console.WriteLine();
         Console.WriteLine(y.ToString());
     }
+
+    public static void ExemploEncapsulamento()
+    {
+        Console.WriteLine("Exemplo de uso de Encapsulamento");
+
+        Console.WriteLine();
+        Console.WriteLine("Entre com os dados do triângulo: ");
+        Triangulo x = TrianguloInputs.CriarTriangulo();
+        Console.WriteLine();
+        Console.WriteLine($"Nome: {x.Nome}");
+        Console.WriteLine($"Lado A = {x.A.ToString("F4", CultureInfo.InvariantCulture)}");
+        Console.WriteLine($"Lado B = {x.B.ToString("F4", CultureInfo.InvariantCulture)}");
+        Console.WriteLine($"Lado C = {x.C.ToString("F4", CultureInfo.InvariantCulture)}");
+
+        Console.WriteLine();
+        Console.Write("Entre com um novo nome para o triângulo: ");
+        x.Nome = Console.ReadLine()!;
+        Console.WriteLine();
+        Console.WriteLine($"Nome: {x.Nome}");
+        Console.WriteLine($"Lado A = {x.A.ToString("F4", CultureInfo.InvariantCulture)}");
+        Console.WriteLine($"Lado B = {x.B.ToString("F4", CultureInfo.InvariantCulture)}");
+        Console.WriteLine($"Lado C = {x.C.ToString("F4", CultureInfo.InvariantCulture)}");
+    }
 }
