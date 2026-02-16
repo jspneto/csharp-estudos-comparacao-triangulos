@@ -1,3 +1,4 @@
+using System.Globalization;
 using Projeto.Src;
 using Projeto.Src.IO;
 
@@ -29,6 +30,26 @@ static class ProgramExamples
         Console.WriteLine();
         Console.WriteLine("Entre com os dados do triângulo:");
         Triangulo x = TrianguloInputs.CriarTriangulo();
+
+        Console.WriteLine();
+        Console.WriteLine(x.ToString());
+    }
+
+    public static void ExemploConstrutores()
+    {
+        Console.WriteLine("Exemplo de uso de Construtores");
+
+        Console.WriteLine();
+        Console.WriteLine("Entre com os dados do triângulo:");
+        Console.Write("Nome: ");
+        string nome = Console.ReadLine()!;
+        Console.Write("Lado A: ");
+        double a = double.Parse(Console.ReadLine()!, CultureInfo.InvariantCulture);
+        Console.Write("Lado B: ");
+        double b = double.Parse(Console.ReadLine()!, CultureInfo.InvariantCulture);
+        Console.Write("Lado C: ");
+        double c = double.Parse(Console.ReadLine()!, CultureInfo.InvariantCulture);
+        Triangulo x = new Triangulo(nome, a, b, c);
 
         Console.WriteLine();
         Console.WriteLine(x.ToString());

@@ -4,10 +4,26 @@ namespace Projeto.Src;
 
 class Triangulo
 {
-    public string Nome = "ABC";
+    public string Nome;
     public double A;
     public double B;
     public double C;
+
+    public Triangulo(string nome, double a, double b, double c)
+    {
+        if (nome != null && nome.Length >= 3)
+        {
+            Nome = nome;
+        }
+        else
+        {
+            Nome = "ABC";
+        }
+
+        A = a;
+        B = b;
+        C = c;
+    }
 
     public double Area()
     {
