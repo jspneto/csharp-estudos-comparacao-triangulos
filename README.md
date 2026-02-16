@@ -56,6 +56,7 @@ area = RaizQ(p * (p - a) * (p - b) * (p - c))
   - [**v0.3**][5] — Override de ToString na classe Triangulo
   - [**v0.4**][6] — Adiciona construtor com validacao de nome
   - [**v0.5**][7] — Adiciona sobrecarga de construtor
+  - [**v0.6**][8] — Encapsulamento com properties
 
 - **Estrutural:**
   - [**v0.2.1**][3] — Refatoração de Program com métodos auxiliares
@@ -72,3 +73,4 @@ Este projeto **não tem como foco a solução final perfeita**, mas sim o proces
 [5]: https://github.com/jspneto/csharp-estudos-comparacao-triangulos/tree/v0.3/Projeto "v0.3"
 [6]: https://github.com/jspneto/csharp-estudos-comparacao-triangulos/tree/v0.4/Projeto "v0.4"
 [7]: https://github.com/jspneto/csharp-estudos-comparacao-triangulos/tree/v0.5/Projeto "v0.5"
+[8]: https://github.com/jspneto/csharp-estudos-comparacao-triangulos/tree/v0.6/Projeto "v0.6"
