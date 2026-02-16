@@ -4,17 +4,15 @@ Projeto de estudo em C# com o objetivo de **calcular e comparar a área de dois 
 
 ## Detalhes Gerais
 
-- **Versão**: 0.2.2
-- **Conceito aplicado:** Refatoração de código
+- **Versão**: 0.3
+- **Conceito aplicado:** Sobrescrita (Override)
 
 ## Descrição da Tag
 
-Refatoracao estrutural para melhorar a organizacao do codigo.
+Introduz representacao textual da entidade.
 
-Metodos de entrada e saida foram movidos para classes dedicadas (TrianguloInputs e TrianguloOutputs) dentro de Src/IO, e a comparacao de areas foi centralizada em TrianguloHelpers, deixando o programa principal mais enxuto e didatico.
-
-O Program passa a conter apenas o metodo Main, delegando a execucao dos exemplos para a classe ProgramExamples, facilitando a expansao do projeto com novos cenarios e mantendo o entrypoint simples.
+A classe passa a sobrescrever o metodo ToString para exibir seus atributos e a area calculada, concentrando tambem a logica de exibicao dentro da propria entidade.
 
 ## Exemplo de Execução
 
-<img src="Img/Screenshot-v0.2.1.png" alt="Versão Padrão" width="936">
+<img src="Img/Screenshot-v0.3.png" alt="Exemplo Override" width="936">
