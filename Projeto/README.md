@@ -4,16 +4,14 @@ Projeto de estudo em C# com o objetivo de **calcular e comparar a área de dois 
 
 ## Detalhes Gerais
 
-- **Versão**: 0.6
-- **Conceito aplicado:** Encapsulamento com Properties
+- **Versão**: 0.6.1
+- **Conceito aplicado:** Encapsulamento com Auto-Properties
 
 ## Descrição da Tag
 
-Evolucao do modelo da classe Triangulo com aplicacao de encapsulamento.
+Refatoracao interna da classe.
 
-Os atributos passam a ser privados e expostos por meio de properties, permitindo controle de acesso e validacao no setter do Nome.
-
-Os lados tornam-se somente leitura, garantindo maior consistencia do objeto apos a instanciacao.
+Substitui a implementacao manual das properties por auto-properties com setter privado, simplificando o codigo sem alterar o comportamento externo da classe.
 
 ## Exemplo de Execução
 
