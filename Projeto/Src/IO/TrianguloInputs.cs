@@ -2,7 +2,7 @@ using System.Globalization;
 
 namespace Projeto.Src.IO;
 
-static class TrainguloInputs
+static class TrianguloInputs
 {
     public static Triangulo CriarTriangulo()
     {

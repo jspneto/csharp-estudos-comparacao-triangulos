@@ -8,11 +8,11 @@ static class ProgramExamples
     public static void SolucaoProblema()
     {
         Console.WriteLine("Entre com os dados do primeiro triângulo:");
-        Triangulo x = TrainguloInputs.CriarTriangulo();
+        Triangulo x = TrianguloInputs.CriarTriangulo();
 
         Console.WriteLine();
         Console.WriteLine("Entre com os dados do segundo triângulo:");
-        Triangulo y = TrainguloInputs.CriarTriangulo();
+        Triangulo y = TrianguloInputs.CriarTriangulo();
 
         Triangulo maiorArea = TrianguloHelpers.CompararAreas(x, y);
 
