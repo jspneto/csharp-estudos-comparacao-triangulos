@@ -37,10 +37,10 @@ static class ProgramExamples
 
     public static void ExemploConstrutores()
     {
-        Console.WriteLine("Exemplo de uso de Construtores");
+        Console.WriteLine("Exemplo de uso de Sobrecarga");
 
         Console.WriteLine();
-        Console.WriteLine("Entre com os dados do triângulo:");
+        Console.WriteLine("Entre com os dados do primeiro triângulo:");
         Console.Write("Nome: ");
         string nome = Console.ReadLine()!;
         Console.Write("Lado A: ");
@@ -52,6 +52,13 @@ static class ProgramExamples
         Triangulo x = new Triangulo(nome, a, b, c);
 
         Console.WriteLine();
+        Console.Write("Entre com o nome do segundo triângulo: ");
+        nome = Console.ReadLine()!;
+        Triangulo y = new Triangulo(nome);
+
+        Console.WriteLine();
         Console.WriteLine(x.ToString());
+        Console.WriteLine();
+        Console.WriteLine(y.ToString());
     }
 }

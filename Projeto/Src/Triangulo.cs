@@ -25,6 +25,8 @@ class Triangulo
         C = c;
     }
 
+    public Triangulo(string nome) : this(nome, 3.0, 4.0, 5.0) {}
+
     public double Area()
     {
         double p = (A + B + C) / 2.0;
