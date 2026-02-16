@@ -4,15 +4,17 @@ Projeto de estudo em C# com o objetivo de **calcular e comparar a área de dois 
 
 ## Detalhes Gerais
 
-- **Versão**: 0.5
-- **Conceito aplicado:** Sobrecarga
+- **Versão**: 0.6
+- **Conceito aplicado:** Encapsulamento com Properties
 
 ## Descrição da Tag
 
-Introduz o conceito de sobrecarga.
+Evolucao do modelo da classe Triangulo com aplicacao de encapsulamento.
 
-Permite a criacao de um triangulo informando apenas o nome, utilizando valores padrao para os lados e delegando a construcao ao construtor principal por meio de encadeamento.
+Os atributos passam a ser privados e expostos por meio de properties, permitindo controle de acesso e validacao no setter do Nome.
+
+Os lados tornam-se somente leitura, garantindo maior consistencia do objeto apos a instanciacao.
 
 ## Exemplo de Execução
 
-<img src="Img/Screenshot-v0.5.png" alt="Exemplo Sobrecarga" width="936">
+<img src="Img/Screenshot-v0.6.png" alt="Exemplo Encapsulamento" width="936">
