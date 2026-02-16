@@ -21,4 +21,16 @@ static class ProgramExamples
         TrianguloOutputs.ExibirArea(y);
         Console.WriteLine($"Maior área: {maiorArea.Nome}");
     }
+
+    public static void ExemploOverride()
+    {
+        Console.WriteLine("Exemplo de uso de Sobrescrita (Override)");
+        
+        Console.WriteLine();
+        Console.WriteLine("Entre com os dados do triângulo:");
+        Triangulo x = TrianguloInputs.CriarTriangulo();
+
+        Console.WriteLine();
+        Console.WriteLine(x.ToString());
+    }
 }
