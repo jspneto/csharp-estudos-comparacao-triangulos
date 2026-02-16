@@ -5,9 +5,9 @@ namespace Projeto.Src;
 class Triangulo
 {
     private string _nome;
-    private double _a;
-    private double _b;
-    private double _c;
+    public double A { get; private set; }
+    public double B { get; private set; }
+    public double C { get; private set;}
 
     public Triangulo(string nome, double a, double b, double c)
     {
@@ -20,9 +20,9 @@ class Triangulo
             _nome = "ABC";
         }
 
-        _a = a;
-        _b = b;
-        _c = c;
+        A = a;
+        B = b;
+        C = c;
     }
 
     public Triangulo(string nome) : this(nome, 3.0, 4.0, 5.0) {}
@@ -44,30 +44,6 @@ class Triangulo
             {
                 _nome = "ABC";
             }
-        }
-    }
-
-    public double A
-    {
-        get
-        {
-            return _a;
-        }
-    }
-
-    public double B
-    {
-        get
-        {
-            return _b;
-        }
-    }
-
-    public double C
-    {
-        get
-        {
-            return _c;
         }
     }
 
