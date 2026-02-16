@@ -4,17 +4,15 @@ Projeto de estudo em C# com o objetivo de **calcular e comparar a área de dois 
 
 ## Detalhes Gerais
 
-- **Versão**: 0.4
-- **Conceito aplicado:** Construtores
+- **Versão**: 0.5
+- **Conceito aplicado:** Sobrecarga
 
 ## Descrição da Tag
 
-Evolucao do modelo de instanciacao da classe.
+Introduz o conceito de sobrecarga.
 
-A criacao do objeto passa a exigir parametros no construtor, garantindo que todo triangulo possua um nome valido no momento da instanciacao.
-
-O metodo CriarTriangulo foi atualizado para utilizar o novo construtor.
+Permite a criacao de um triangulo informando apenas o nome, utilizando valores padrao para os lados e delegando a construcao ao construtor principal por meio de encadeamento.
 
 ## Exemplo de Execução
 
-<img src="Img/Screenshot-v0.4.png" alt="Exemplo Construtores" width="936">
+<img src="Img/Screenshot-v0.5.png" alt="Exemplo Sobrecarga" width="936">
