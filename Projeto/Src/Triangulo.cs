@@ -15,6 +15,13 @@ class Triangulo
         A = ValidarLado(a);
         B = ValidarLado(b);
         C = ValidarLado(c);
+
+        if (!DesigualdadeTriangular(A, B, C))
+        {
+            A = 1.0;
+            B = 1.0;
+            C = 1.0;
+        }
     }
 
     public Triangulo(string nome) : this(nome, 3.0, 4.0, 5.0) {}
@@ -53,6 +60,18 @@ class Triangulo
         else
         {
             return 1.0;
+        }
+    }
+
+    private static bool DesigualdadeTriangular(double a, double b, double c)
+    {
+        if (a + b > c && a + c > b && b + c > a)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
         }
     }
 
