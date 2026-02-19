@@ -12,9 +12,9 @@ class Triangulo
     public Triangulo(string nome, double a, double b, double c)
     {
         _nome = ValidarNome(nome);
-        A = a;
-        B = b;
-        C = c;
+        A = ValidarLado(a);
+        B = ValidarLado(b);
+        C = ValidarLado(c);
     }
 
     public Triangulo(string nome) : this(nome, 3.0, 4.0, 5.0) {}
@@ -41,6 +41,18 @@ class Triangulo
         else
         {
             return "ABC";
+        }
+    }
+
+    private static double ValidarLado(double medida)
+    {
+        if (medida > 0.0)
+        {
+            return medida;
+        }
+        else
+        {
+            return 1.0;
         }
     }
 
