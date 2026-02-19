@@ -62,6 +62,7 @@ area = RaizQ(p * (p - a) * (p - b) * (p - c))
   - [**v0.2.1**][3] — Refatoração de Program com métodos auxiliares
   - [**v0.2.2**][4] — Separa IO e helpers e limpa o entrypoint
   - [**v0.6.1**][9] — Aplica auto-properties nos lados do Triangulo
+  - [**v0.6.2**][10] — Validacao geometrica no construtor
 
 ## Objetivo Educacional
 
@@ -75,4 +76,5 @@ Este projeto **não tem como foco a solução final perfeita**, mas sim o proces
 [6]: https://github.com/jspneto/csharp-estudos-comparacao-triangulos/tree/v0.4/Projeto "v0.4"
 [7]: https://github.com/jspneto/csharp-estudos-comparacao-triangulos/tree/v0.5/Projeto "v0.5"
 [8]: https://github.com/jspneto/csharp-estudos-comparacao-triangulos/tree/v0.6/Projeto "v0.6"
-[9]: https://github.com/jspneto/csharp-estudos-comparacao-triangulos/tree/v0.6.1/Projeto "v0.1"
+[9]: https://github.com/jspneto/csharp-estudos-comparacao-triangulos/tree/v0.6.1/Projeto "v0.6.1"
+[10]: https://github.com/jspneto/csharp-estudos-comparacao-triangulos/tree/v0.6.2/Projeto "v0.6.2"
