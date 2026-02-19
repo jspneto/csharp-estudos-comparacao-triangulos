@@ -7,7 +7,7 @@ class Triangulo
     private string _nome;
     public double A { get; private set; }
     public double B { get; private set; }
-    public double C { get; private set;}
+    public double C { get; private set; }
 
     public Triangulo(string nome, double a, double b, double c)
     {
