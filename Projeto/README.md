@@ -4,15 +4,17 @@ Projeto de estudo em C# com o objetivo de **calcular e comparar a área de dois 
 
 ## Detalhes Gerais
 
-- **Versão**: 0.6.1
-- **Conceito aplicado:** Encapsulamento com Auto-Properties
+- **Versão**: 0.7
+- **Conceito aplicado:** Validação de Entradas
 
 ## Descrição da Tag
 
-Refatoracao interna da classe.
+Evolucao da modelagem da entidade Triangulo.
 
-Substitui a implementacao manual das properties por auto-properties com setter privado, simplificando o codigo sem alterar o comportamento externo da classe.
+O construtor passa a validar nao apenas a positividade dos lados, mas tambem a desigualdade triangular, garantindo que todo objeto represente um triangulo geometricamente valido.
+
+Em caso de inconsistencias, aplica medidas padrao como fallback.
 
 ## Exemplo de Execução
 
-<img src="Img/Screenshot-v0.6.png" alt="Exemplo Encapsulamento" width="936">
+<img src="Img/Screenshot-v0.7.png" alt="Validação de Entradas" width="936">
