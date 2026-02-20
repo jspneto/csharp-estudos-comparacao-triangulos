@@ -11,7 +11,6 @@ class Triangulo
 
     public Triangulo(string nome, double a, double b, double c)
     {
-        _nome = ValidarNome(nome);
         A = ValidarLado(a);
         B = ValidarLado(b);
         C = ValidarLado(c);
@@ -21,6 +20,15 @@ class Triangulo
             A = 1.0;
             B = 1.0;
             C = 1.0;
+        }
+
+        if (NomeValido(nome))
+        {
+            _nome = nome;
+        }
+        else
+        {
+            _nome = "ABC";
         }
     }
 
@@ -35,19 +43,22 @@ class Triangulo
 
         set
         {
-            _nome = ValidarNome(value);
+            if (NomeValido(value))
+            {
+                _nome = value;
+            }
         }
     }
 
-    private static string ValidarNome(string nome)
+    private static bool NomeValido(string nome)
     {
         if (nome != null && nome.Length >= 3)
         {
-            return nome;
+            return true;
         }
         else
         {
-            return "ABC";
+            return false;
         }
     }
 
